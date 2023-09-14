@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #dfdfdf;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/*.container .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}*/
+
+.container .social-media a {
+    text-decoration: none;
+}
+
+.container .social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+.container .social-media a:nth-child(2) img{
+    height: 40px;
+}
+.container .social-media a:first-child img {
+    margin-left: 0;
+}
+
+.alternative {
+    margin-top: 1rem;
+}
+
+.alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.alternative span::before, .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: rgb(0, 0, 0);
+}
+
+.alternative span::after {
+    left: 50px;
+}
+
+@media only screen and (max-width: 450px){
+    .alternative span {
+        font-size: 0.8rem;
+    }
+}
+    
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
